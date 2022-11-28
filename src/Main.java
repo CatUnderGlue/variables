@@ -37,5 +37,14 @@ public class Main {
         System.out.println("Разница в весе боксёров: " + differenceWeight);
         var secondDifferenceWeight = weightSecondBoxer % weightFirstBoxer;
         System.out.println("Разница в весе боксёров с помощью остатка от деления: " + secondDifferenceWeight);
+
+        var jobsHours = 640;
+        var hoursPerWorker = 8;
+        var workers = jobsHours / hoursPerWorker;
+        System.out.println("Всего работников в компании - " + workers + " человек");
+
+        workers = workers + 94;
+        hoursPerWorker = jobsHours / workers;
+        System.out.println("Если в компании работает " + workers + " человек, то всего " + hoursPerWorker + " часов работы может быть поделено между сотрудниками");
     }
 }
